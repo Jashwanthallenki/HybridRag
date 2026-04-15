@@ -1,0 +1,38 @@
+# Frontend Requirments
+streamlit
+
+# AI/ML Dependencies
+google-generativeai
+pinecone
+langgraph
+langchain-core
+langchain
+langchain-community
+langchain-pinecone
+langchain-google-genai
+
+# Utilities
+python-dotenv
+requests
+werkzeug
+
+# Development (optional)
+gunicorn
+
+# FastAPI Dependencies
+fastapi
+uvicorn[standard]
+pydantic
+starlette
+python-multipart
+
+# Database
+sqlalchemy
+psycopg2-binary
+asyncpg
+supabase
+
+# PDF Processing
+pdfplumber
+pandas
+pypdf

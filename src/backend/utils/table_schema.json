@@ -1,0 +1,169 @@
+{
+  "pdf_40c67bba_world_cup_matches": {
+    "schema": {
+      "match_ID": "integer",
+      "year": "integer",
+      "round": "string",
+      "home_team": "string",
+      "away_team": "string",
+      "home_score": "integer",
+      "away_score": "integer",
+      "winner": "string"
+    },
+    "description": "This table, `pdf_40c67bba_world_cup_matches`, stores data on World Cup matches.  It contains information about each match, including the year, round, home and away teams, scores, and the winning team (or \"Draw\").  The table is suitable for queries retrieving match details based on year, round, team names, or scores.  The `match_ID` column serves as a unique identifier for each match.  The data spans multiple World Cups, as evidenced by the `year` column.",
+    "pdf_uuid": "40c67bba",
+    "created_at": "2025-09-03T08:20:57.484934",
+    "status": "complete",
+    "rows_stored": 100
+  },
+  "pdf_d6739fde_world_cup_match_results": {
+    "schema": {
+      "match_ID": "integer",
+      "year": "integer",
+      "round": "string",
+      "home_team": "string",
+      "away_team": "string",
+      "home_score": "integer",
+      "away_score": "integer",
+      "winner": "string"
+    },
+    "description": "This table, `pdf_d6739fde_world_cup_match_results`, stores data on World Cup match results.  It contains information for approximately 100 matches.  Each row represents a single match, with columns specifying the `match_ID`, `year`, `round` of the tournament, the `home_team`, `away_team`, their respective `home_score` and `away_score`, and the `winner` (or \"Draw\").  All scores are integers.  Team names are text strings. The `year` and `match_ID` fields can be used for unique identification of a match.  Use this table to answer questions about specific World Cup matches, including scores, participating teams, and the winning team for a given match or year.",
+    "pdf_uuid": "d6739fde",
+    "created_at": "2025-09-03T11:03:01.425445",
+    "status": "complete",
+    "rows_stored": 100
+  },
+  "pdf_0965c597_player_statistics": {
+    "schema": {
+      "player_name": "string",
+      "position": "string",
+      "team": "string",
+      "salary": "integer",
+      "tackles": "integer",
+      "interceptions": "integer",
+      "sacks": "integer",
+      "touchdowns": "integer"
+    },
+    "description": "TBD",
+    "pdf_uuid": "0965c597",
+    "created_at": "2025-09-03T11:14:31.764323",
+    "status": "processing"
+  },
+  "pdf_0965c597_nfl_player_stats": {
+    "schema": {
+      "player_name": "string",
+      "position": "string",
+      "team": "string",
+      "games_played": "integer",
+      "interceptions": "integer",
+      "sacks": "float",
+      "fumbles_recovered": "integer",
+      "special_teams_tackles": "integer"
+    },
+    "description": "This table, `pdf_0965c597_nfl_player_stats`, contains NFL player statistics.  It's useful for querying information about individual players or comparing players based on various metrics.  Columns include player name (`player_name`), position (`position`), team (`team`), games played (`games_played`), interceptions (`interceptions`), sacks (`sacks`), fumbles recovered (`fumbles_recovered`), and special teams tackles (`special_teams_tackles`).  The data is limited to a sample of players and may not represent the entire NFL player population. Use this table when you need to retrieve or analyze data on specific players' performance across different statistical categories.  Note that some data (e.g., team names) may be abbreviated in the source data.",
+    "pdf_uuid": "0965c597",
+    "created_at": "2025-09-03T11:14:22.229766",
+    "status": "complete",
+    "rows_stored": 14
+  },
+  "pdf_0965c597_nfl_rushing_leaders": {
+    "schema": {
+      "rank": "integer",
+      "player": "string",
+      "team_by_season": "text",
+      "carries": "integer",
+      "yards": "integer",
+      "average": "float"
+    },
+    "description": "This table, `pdf_0965c597_nfl_rushing_leaders`, contains historical data on the top NFL rushing leaders.  It lists each player's rank, name, teams played for (across multiple seasons, often spanning years), total carries, total rushing yards, and average yards per carry.  The data is somewhat messy, with inconsistent formatting in the `team_by_season` column. Queries should account for this potential data inconsistency.  Use this table to answer questions about NFL rushing statistics for the players listed.  The `rank` column can be used for ordering results.  Numerical columns (`carries`, `yards`, `average`) can be used for filtering and aggregation.",
+    "pdf_uuid": "0965c597",
+    "created_at": "2025-09-03T11:14:34.575536",
+    "status": "complete",
+    "rows_stored": 20
+  },
+  "pdf_85945469_world_cup_match_results": {
+    "schema": {
+      "match_ID": "integer",
+      "Year": "integer",
+      "Round": "string",
+      "Home_Team": "string",
+      "Away_Team": "string",
+      "Home_Score": "integer",
+      "Away_Score": "integer",
+      "Winner": "string"
+    },
+    "description": "This table, `pdf_85945469_world_cup_match_results`, stores data on World Cup match results.  It contains information for approximately 100 matches.  Use this table to answer queries about specific matches, teams, scores, winners, and rounds played in past World Cups.  The table's columns provide details such as match ID (`match_ID`), year (`Year`), round of the tournament (`Round`), home and away teams (`Home_Team`, `Away_Team`), scores (`Home_Score`, `Away_Score`), and the match winner (`Winner`).  The data spans multiple years, starting from 1930, and includes group stage and later rounds. The surrounding text indicates that this is a chronological listing of matches.",
+    "pdf_uuid": "85945469",
+    "created_at": "2025-09-03T11:17:24.912253",
+    "status": "complete",
+    "rows_stored": 100
+  },
+  "pdf_c20081b6_world_cup_match_results": {
+    "schema": {
+      "match_id": "integer",
+      "year": "integer",
+      "round": "string",
+      "home_team": "string",
+      "away_team": "string",
+      "home_score": "integer",
+      "away_score": "integer",
+      "winner": "string"
+    },
+    "description": "This table, `pdf_c20081b6_world_cup_match_results`, stores data on World Cup match results.  It contains information for each match, including the `match_id`, `year`, `round` of the tournament, the `home_team` and `away_team`, their respective `home_score` and `away_score`, and the `winner` of the match.  All scores are integer values.  The table is suitable for queries retrieving match details based on year, round, team participation, or scores.  The data spans multiple World Cup years, as evidenced by the sample data ranging from 1930 to 1978.  The surrounding text suggests this table contains historical World Cup match results.",
+    "pdf_uuid": "c20081b6",
+    "created_at": "2025-09-03T11:59:24.918314",
+    "status": "complete",
+    "rows_stored": 100
+  },
+  "pdf_cec71391_world_cup_match_results": {
+    "schema": {
+      "match_ID": "integer",
+      "year": "integer",
+      "round": "string",
+      "home_team": "string",
+      "away_team": "string",
+      "home_score": "integer",
+      "away_score": "integer",
+      "winner": "string"
+    },
+    "description": "This table, `pdf_cec71391_world_cup_match_results`, stores data on World Cup match results.  It contains information for approximately 100 matches.  Each row represents a single match with the following columns:\n\n* **match_ID:** Unique identifier for each match (INT).\n* **year:** Year the match was played (INT).\n* **round:** Stage of the tournament (e.g., \"Group 1\", \"Semi-final\") (VARCHAR).\n* **home_team:** Name of the home team (VARCHAR).\n* **away_team:** Name of the away team (VARCHAR).\n* **home_score:** Score of the home team (INT).\n* **away_score:** Score of the away team (INT).\n* **winner:** Name of the winning team (\"Draw\" if a draw) (VARCHAR).\n\nUse this table to answer questions about World Cup match results, such as finding matches played in a specific year, finding matches between specific teams, or determining the winner of a particular match.  The surrounding text often provides context indicating relevant match details that can be used to formulate queries against this table.",
+    "pdf_uuid": "cec71391",
+    "created_at": "2025-09-03T12:13:20.739747",
+    "status": "complete",
+    "rows_stored": 100
+  },
+  "pdf_69e9e9ea_world_cup_match_results": {
+    "schema": {
+      "match_id": "integer",
+      "year": "integer",
+      "round": "string",
+      "home_team": "string",
+      "away_team": "string",
+      "home_score": "integer",
+      "away_score": "integer",
+      "winner": "string"
+    },
+    "description": "This table, `pdf_69e9e9ea_world_cup_match_results`, stores data on World Cup match results.  It contains information about individual matches, including the `match_id`, `year`, `round` of the tournament, the `home_team` and `away_team`, their respective `home_score` and `away_score`, and the `winner` of the match.  The data spans multiple years and tournament rounds. Use this table to query information about specific matches, teams, scores, or winners based on year, round, or team names.  The data is primarily numerical (scores, year, match ID) and string-based (team names, round, winner).",
+    "pdf_uuid": "69e9e9ea",
+    "created_at": "2025-09-03T14:00:51.103954",
+    "status": "complete",
+    "rows_stored": 100
+  },
+  "pdf_39089c73_world_cup_match_results": {
+    "schema": {
+      "match_id": "integer",
+      "year": "integer",
+      "round": "string",
+      "home_team": "string",
+      "away_team": "string",
+      "home_score": "integer",
+      "away_score": "integer",
+      "winner": "string"
+    },
+    "description": "This table, `pdf_39089c73_world_cup_match_results`, stores results of World Cup matches.  It contains information for approximately 100 matches.  Each row represents a single match with details including:  match ID (`match_id`), year (`year`), round of the tournament (`round`), home and away teams (`home_team`, `away_team`), their respective scores (`home_score`, `away_score`), and the match winner (`winner`).  The data types are integers for IDs and scores, and text for team names, round, and winner.  Use this table to answer questions about specific matches, teams, scores, and winners from the World Cup.  The data spans multiple years, as indicated by the sample data.  The `winner` column can contain \"Draw\" if the match was a draw.",
+    "pdf_uuid": "39089c73",
+    "created_at": "2025-09-03T15:10:11.458863",
+    "status": "complete",
+    "rows_stored": 100
+  }
+}
